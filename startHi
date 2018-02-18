@@ -1,0 +1,23 @@
+//Given a string, return true if the string starts with "hi" and false otherwise.
+
+public boolean startHi(String str) {
+  // First test if the string is not at least length 2;
+  // (So the substring () below does not go past the end).
+  
+  if (str.length()<2 ) return false;
+  
+  // pull out the string of the first two chars
+  String firstTwo = str.substring(0,2);
+  
+  // Test if it is equel to "hi";
+  if (firstTwo.equals("hi")){
+    return true;
+    
+  }else{
+    return false;
+  }
+  
+ // this last part can be shourtened to : return(firstTwo.equals("hi");
+ 
+}
+
