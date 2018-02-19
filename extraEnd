@@ -9,3 +9,12 @@ public String extraEnd(String str) {
 
 }
 
+public String extraEnd(String str) {
+  String end = str.substring(str.length()-2);
+  return end + end + end;
+  
+  // Solution notes: the last two chars begin at index str.length()-2
+  // Here we store the chars in a local variable, which makes the code
+  // longer but simpler.
+}
+
